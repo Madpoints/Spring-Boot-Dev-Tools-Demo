@@ -14,4 +14,15 @@ public class BasicRestController {
 		return "Hello World! Time on the server is: " + LocalDateTime.now();
 	}
 
+	@GetMapping("/workout")
+	public String getDailyWorkout() {
+		
+		return "Run a 5k";
+	}
+	
+	@GetMapping("/fortune")
+	public String getDailyFortune() {
+		
+		return "You will run like the wind";
+	}
 }
